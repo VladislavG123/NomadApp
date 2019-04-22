@@ -1,0 +1,43 @@
+﻿<Page x:Class="NomadApp.Pages.PublicsherLoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NomadApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="PublicsherLoginPage">
+
+    <Grid Background="White">
+        <Rectangle StrokeThickness="0" HorizontalAlignment="Left" Height="274" Margin="87,38,0,0" Stroke="Black" VerticalAlignment="Top" Width="211">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1A54A6" Offset="0"/>
+                    <GradientStop Color="#FF2E7CEC" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="ВХОД" HorizontalAlignment="Left" Margin="157,38,0,0" VerticalAlignment="Top" Width="67" Height="38" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="LoginTextBox" HorizontalAlignment="Left" Height="23" Margin="157,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Button BorderThickness="0" Content="ДАЛЕЕ" HorizontalAlignment="Left" Margin="138,289,0,0" VerticalAlignment="Top" Width="106" Height="36" FontWeight="Bold" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFBFBDBD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="ЛОГИН" HorizontalAlignment="Left" Margin="112,98,0,0" VerticalAlignment="Top" Width="56" FontWeight="Bold" Foreground="White"/>
+        <Label Content="ПАРОЛЬ" HorizontalAlignment="Left" Margin="112,172,0,0" VerticalAlignment="Top" Width="83" FontWeight="Bold" Foreground="White"/>
+        <PasswordBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Margin="157,203,0,0" VerticalAlignment="Top" Width="115" Height="25"/>
+        <Button x:Name="PublisherRegistrationButton" BorderThickness="0" Content="ЗАРЕГЕСТРИРОВАТЬСЯ" HorizontalAlignment="Left" Margin="229,357,0,0" VerticalAlignment="Top" Width="121" Height="25" IsDefault="True" FontSize="8" FontWeight="Bold" Foreground="White" Click="PublisherRegistrationButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2669C7" Offset="0"/>
+                    <GradientStop Color="#FF2E7CEC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
